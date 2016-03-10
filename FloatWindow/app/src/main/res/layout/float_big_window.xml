@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="220dp"
+    android:layout_height="220dp"
+    android:id="@+id/big_float_layout"
+    android:background="#0000"
+    android:layout_alignParentBottom="true"
+     >
+
+    <com.android.pieview.PieView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></com.android.pieview.PieView>
+
+</RelativeLayout>

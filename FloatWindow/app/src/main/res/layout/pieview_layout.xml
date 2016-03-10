@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#0000"
+    >
+    <Button android:id="@+id/btn_sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/composer_sleep"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button android:id="@+id/btn_thought"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/composer_thought"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button android:id="@+id/btn_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/composer_music"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button android:id="@+id/btn_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/composer_place"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button android:id="@+id/btn_with"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:background="@drawable/composer_with"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button android:id="@+id/btn_camera"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:background="@drawable/composer_camera"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button android:id="@+id/btn_menu"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:background="@drawable/menu_unpress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginBottom="10dip"
+        />
+</RelativeLayout>
+
+
