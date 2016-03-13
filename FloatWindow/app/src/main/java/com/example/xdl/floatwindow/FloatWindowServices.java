@@ -22,7 +22,7 @@ import java.util.TimerTask;
 public class FloatWindowServices extends Service {
 
 
-
+public MyWindowManager myWindowManager;
     @Override
     public IBinder onBind(Intent intent) {
         // TODO: Return the communication channel to the service.
@@ -32,9 +32,12 @@ public class FloatWindowServices extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
        //创建悬浮窗口
-        if (!MyWindowManager.isWindowShowing())
-             MyWindowManager.createBigWindow(getApplicationContext());
+        myWindowManager=new MyWindowManager();
+        if (!myWindowManager.isWindowShowing())
+             myWindowManager.createSmallWindow(getApplicationContext());
         return super.onStartCommand(intent, flags, startId);
     }
-
+    public MyWindowManager getManager(){
+        return myWindowManager;
+    }
 }

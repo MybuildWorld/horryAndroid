@@ -4,6 +4,7 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.graphics.PixelFormat;
 import android.os.Handler;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -50,6 +52,7 @@ public class MyWindowManager {
     private static ActivityManager mActivityManager;
 
 
+
     /**
      * 创建一个小悬浮窗。初始位置为屏幕的右部中间位置。
      *
@@ -58,12 +61,14 @@ public class MyWindowManager {
      */
     public static void createSmallWindow(Context context) {
         WindowManager windowManager = getWindowManager(context);
-        int screenWidth = windowManager.getDefaultDisplay().getWidth();
-        int screenHeight = windowManager.getDefaultDisplay().getHeight();
+
         if (smallWindow == null) {
             smallWindow = new smallFloatWindowView(context);
+            int screenWidth = windowManager.getDefaultDisplay().getWidth();
+            int screenHeight = windowManager.getDefaultDisplay().getHeight();
             if (smallWindowParams == null) {
                 smallWindowParams = new WindowManager.LayoutParams();
+                System.out.println("创建大窗口");
                 smallWindowParams.type = WindowManager.LayoutParams.TYPE_PHONE;
                 smallWindowParams.format = PixelFormat.RGBA_8888;
                 smallWindowParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL
@@ -94,7 +99,7 @@ public class MyWindowManager {
     }
 
     /**
-     * 创建一个大悬浮窗。位置为屏幕正中间。
+     * 创建一个大悬浮窗,由小悬浮窗口决定。
      *
      * @param context
      *            必须为应用程序的Context.
@@ -108,15 +113,25 @@ public class MyWindowManager {
             bigWindow = new bigFloatWindowView(context);
             if (bigWindowParams == null) {
                 bigWindowParams = new WindowManager.LayoutParams();
-                bigWindowParams.x = 0;
-                bigWindowParams.y = 0;
+                WindowManager.LayoutParams paramsSW= (WindowManager.LayoutParams) smallWindow.getLayoutParams();
+                bigWindowParams.width = bigFloatWindowView.viewWidth;
+                bigWindowParams.height =bigFloatWindowView.viewHeight;
+                if (paramsSW.x<bigWindowParams.width){
+                    bigWindowParams.x=bigWindowParams.width/2;
+                    bigWindowParams.y=paramsSW.y;
+                }
+                  else if((screenWidth-paramsSW.x)<bigWindowParams.width){
+                    bigWindowParams.x=screenWidth-bigWindowParams.width/2;
+                    bigWindowParams.y=paramsSW.y;
+                }
+                else{
+                    bigWindowParams.x=paramsSW.x;
+                    bigWindowParams.y=paramsSW.y;
+                }
                 bigWindowParams.type = WindowManager.LayoutParams.TYPE_PHONE;
                 bigWindowParams.format = PixelFormat.RGBA_8888;
-                bigWindowParams.gravity = Gravity.LEFT | Gravity.BOTTOM;
-                bigWindowParams.width = (int)bigFloatWindowView.viewWidth;
-                bigWindowParams.height =(int)(bigFloatWindowView.viewHeight);
+                bigWindowParams.gravity = Gravity.LEFT | Gravity.TOP;
             }
-
                 windowManager.addView(bigWindow, bigWindowParams);
 
         }
@@ -134,6 +149,7 @@ public class MyWindowManager {
             WindowManager windowManager = getWindowManager(context);
             windowManager.removeView(bigWindow);
             bigWindow = null;
+            bigWindowParams=null;
         }
     }
 

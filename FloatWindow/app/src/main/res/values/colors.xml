@@ -3,6 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="pie_button_bg">#aa001122</color>
+    <color name="pie_button_bg">#FFFDFD</color>
     <color name="pie_button_pressed">#aae39a25</color>
+    <color name="circleColor">#AAFAF3E7</color>
 </resources>

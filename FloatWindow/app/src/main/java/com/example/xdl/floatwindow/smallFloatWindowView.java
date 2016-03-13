@@ -41,7 +41,7 @@ public class smallFloatWindowView extends LinearLayout {
       private float yInScreen;
 
     //记录悬浮窗的参数
-     static WindowManager.LayoutParams params;
+     public WindowManager.LayoutParams params;
     //用于更新悬浮窗的位置
     WindowManager windowManager;
 
@@ -52,7 +52,6 @@ public class smallFloatWindowView extends LinearLayout {
         View view=findViewById(R.id.small_float_layout);
         viewHeight=view.getLayoutParams().height;
         viewWidth=view.getLayoutParams().width;
-
     }
 
     @Override
@@ -87,7 +86,7 @@ public class smallFloatWindowView extends LinearLayout {
         return true;
     }
 
-    private float getStatusbarHeight() {
+    public  float getStatusbarHeight() {
         if (statusBarHeight == 0) {
             try {
                 Class<?> c = Class.forName("com.android.internal.R$dimen");
@@ -110,8 +109,10 @@ public class smallFloatWindowView extends LinearLayout {
     public void updateWindowPosition(){
         params.x= (int) (xInScreen-xInView);
         params.y= (int) (yInScreen-yInView);
-        windowManager.updateViewLayout(this,params);
+        windowManager.updateViewLayout(this, params);
+        System.out.println("小窗口横坐标"+ params.x);
 }
+
     /**
      * 将小悬浮窗的参数传入，用于更新小悬浮窗的位置。
      *
