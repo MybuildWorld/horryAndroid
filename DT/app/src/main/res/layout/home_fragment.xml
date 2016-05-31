@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="#ffffff">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="20sp"-->
+            <!--android:typeface="monospace"-->
+            <!--android:textColor="#000000"-->
+            <!--android:text="@string/HomeTitle"/>-->
+        <!--<ImageView-->
+            <!--android:layout_width="48dp"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+            <!--android:src="@mipmap/launchpad_icon"/>-->
+    <!--</RelativeLayout>-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/tofresh"
+        >
+        <com.etsy.android.grid.StaggeredGridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/stagger_view"
+            app:item_margin="8dp"
+            app:column_count="2"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

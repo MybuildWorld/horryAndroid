@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 应用于程序或者活动的主题 -->
+    <style name="AppTheme"
+        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <!-- 支持库兼容 -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+    <!-- ActionBar 样式 -->
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <!-- 支持库兼容 -->
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+    <!-- ActionBar 标题文本 -->
+    <style name="MyActionBarTitleText"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorBlack</item>
+
+        <!-- 文本颜色属性textColor是可以配合支持库向后兼容的 -->
+    </style>
+    <style name="HorizontalDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/light_grey</item>
+    </style>
+    <style name="DiscoverButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="CategoryButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">76dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="VerticalDivider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/light_grey</item>
+    </style>
+    <style name="Category">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">156dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:weightSum">3</item>
+    </style>
+    <style name="SmallCategoryButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:paddingLeft">22dp</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="DefaultClickable">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/selector_default_press</item>
+    </style>
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kay.duitang.ui.ScrollNotifyView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/profile_header"/>
+
+        <LinearLayout
+            android:id="@+id/album_club"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/table_view_rectangle"
+            >
+
+            <LinearLayout
+                android:id="@+id/album_head"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/selector_default_press"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="专辑 0"
+                    android:textSize="17sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="查看所有"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="16sp"
+                    />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/icon_arrow"
+                    />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/selector_add_album"
+                android:clickable="true"
+                android:layout_marginLeft="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:text="创建新专辑"
+                />
+
+            <View
+                style="@style/HorizontalDivider"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_default_press"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:text="Club 0"
+                android:textSize="17sp"
+                />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/selector_add_club"
+                android:clickable="true"
+                android:layout_marginLeft="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:text="发现Club"
+                />
+
+        </LinearLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/table_view_rectangle">
+
+            <TableRow
+                style="@style/DefaultClickable">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="所有的图片 0"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/icon_arrow"
+                    />
+            </TableRow>
+
+            <View style="@style/HorizontalDivider"/>
+
+            <TableRow
+                style="@style/DefaultClickable">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:text="喜欢的专辑 0"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/icon_arrow"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</com.kay.duitang.ui.ScrollNotifyView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:myapp="http://schemas.android.com/tools"
+       xmlns:tools="http://schemas.android.com/tools"
+       tools:context=".MainActivity">
+  <item android:id="@+id/add"
+         android:icon="@drawable/action_bar_icon_add"
+         android:title="@string/Add"
+          myapp:showAsAction="always"
+          android:visible="true"/>
+  <item android:id="@+id/search"
+         android:icon="@drawable/action_bar_icon_search"
+         android:title="设置"
+         myapp:showAsAction="always"
+         />
+
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:background="@drawable/discover_view_background">
+
+            <Button
+                android:drawableTop="@drawable/icon_album"
+                android:text="达人"
+                style="@style/DiscoverButton"/>
+
+            <Button
+                android:drawableTop="@drawable/icon_collection"
+                android:text="Club"
+                style="@style/DiscoverButton"/>
+
+            <Button
+                android:drawableTop="@drawable/icon_notification"
+                android:text="活动"
+                style="@style/DiscoverButton"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/dark_grey"
+            android:padding="8dp"
+            android:background="@color/white"
+            android:text="流行趋势"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/table_view_rectangle"
+            android:scrollbars="none"
+            >
+            <com.example.administrator.dt.UI.HorizontalTrendView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.example.administrator.dt.UI.HorizontalTrendView>
+        </HorizontalScrollView>
+
+        <include layout="@layout/category_layout"/>
+    </LinearLayout>
+
+</ScrollView>
