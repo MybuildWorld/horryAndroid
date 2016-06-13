@@ -1,4 +1,5 @@
 
-![](https://github.com/MybuildWorld/horryAndroid/blob/master/Zhihu/screenshot/1.gif)
-![](https://github.com/MybuildWorld/horryAndroid/blob/master/Zhihu/screenshot/2.gif)
-![](https://github.com/MybuildWorld/horryAndroid/blob/master/Zhihu/screenshot/3.gif)
+#效果图
+![](https://github.com/MybuildWorld/horryAndroid/blob/master/Zhihu/sceenshot/1.gif)
+![](https://github.com/MybuildWorld/horryAndroid/blob/master/Zhihu/sceenshot/2.gif)
+![](https://github.com/MybuildWorld/horryAndroid/blob/master/Zhihu/sceenshot/3.gif)
