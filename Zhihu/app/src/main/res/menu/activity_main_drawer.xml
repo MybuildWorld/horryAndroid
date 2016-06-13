@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+       >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/list"
+            android:title="@string/Home"
+            />
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/compass"
+            android:title="@string/search" />
+        <item
+            android:id="@+id/focus"
+            android:icon="@drawable/visible"
+            android:title="@string/focus" />
+        <item
+            android:id="@+id/collection"
+            android:icon="@drawable/bookmark"
+            android:title="@string/collection" />
+        <item
+            android:id="@+id/meet"
+            android:icon="@drawable/full"
+            android:title="@string/meet"
+            />
+        <item
+            android:id="@+id/message"
+            android:title="@string/message"
+            android:icon="@drawable/sms"/>
+    </group>
+
+</menu>
+
+
+
+
+
+

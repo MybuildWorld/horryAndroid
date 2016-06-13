@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">知乎</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_Search">search</string>
+    <string name="action_Alarm">alarm</string>
+    <string name="Home">首页</string>
+    <string name="search">发现</string>
+    <string name="focus">关注</string>
+    <string name="collection">收藏</string>
+    <string name="meet">圆桌</string>
+    <string name="message">私信</string>
+    <string name="swapTheme">切换主题</string>
+    <string name="setting">设置</string>
+    <string name="title">我们所理解的世界都是我们所能理解的世界，那真实的世界到底是什么样的?</string>
+    <string name="test">
+            自我中心困境是由于“我们缺乏通过感知以外的途径观察世界”这一事实而引起的。
+            是件所有的知识最终都会通过各种途径呈现在我们的意识里，独立于我们的意识与现实直接接触是不可能的。
+            所以，我们不能确定现实是否正真存在。我们都被困在自我感知之中。
+            我永远不能直观的在三圆电视机显像管上感受50英寸大索尼的魅力，只能通过比喻。
+            你也不能直接确认现实的真像，除非你是物质世界本身，你只能通过哲学剃刀，去掉荒诞的假设。
+
+
+    </string>
+
+</resources>

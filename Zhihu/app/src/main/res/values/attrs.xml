@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyValue">
+    <attr name="textcolorMyValue" format="color" />
+    <attr name="backgroundMyValue" format="color"/>
+    <attr name="toolbarMyColor" format="color"/>
+    <attr name="toolbartextMyColor" format="color"/>
+    <attr name="barColor" format="color"/>
+    <attr name="BKColor" format="color"></attr>
+    <!--<attr name="floatValue" format="float" />-->
+    <!--<attr name="integerValue" format="integer" />-->
+    <!--<attr name="booleanValue" format="boolean" />-->
+    <!--<attr name="dimensionValue" format="dimension" />-->
+    <!--<attr name="stringValue" format="string" />-->
+    <!--<attr name="referenceValue" format="color|reference" />-->
+    <!--<attr name="imageValue" format="reference"/>-->
+
+    <!--<attr name="curVisibility">-->
+        <!--<enum name="show" value="0" />-->
+        <!--&lt;!&ndash; Not displayed, but taken into account during layout (space is left for it). &ndash;&gt;-->
+        <!--<enum name="inshow" value="1" />-->
+        <!--&lt;!&ndash; Completely hidden, as if the view had not been added. &ndash;&gt;-->
+        <!--<enum name="hide" value="2" />-->
+    <!--</attr>-->
+    </declare-styleable>
+    <declare-styleable name="ScrimInsetsView">
+        <attr name="MyinsetForeground" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+</resources>

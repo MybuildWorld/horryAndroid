@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="unchecked" >#ffffff</color>
+    <color name="homechecked">#22434CC8</color>
+    <color name="searchchecked">#222FCC72</color>
+    <color name="focuschecked">#22328675</color>
+    <color name="collectionchecked">#22F66E0A</color>
+    <color name="meetchecked">#22F69C31</color>
+    <color name="messegechecked">#2243AEC8</color>
+
+    <color name="homechecked1">#434CC8</color>
+    <color name="searchchecked2">#2FCC72</color>
+    <color name="focuschecked3">#328675</color>
+    <color name="collectionchecked4">#F66E0A</color>
+    <color name="meetchecked5">#F69C31</color>
+    <color name="messegechecked6">#43AEC8</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="textColorSecondary">#ffffff</color>
+    <color name="background">#ffffff</color>
+
+    <color name="nightmode">#647364</color>
+
+    <color name="Primary">#647364</color>
+    <color name="PrimaryDark">#647364</color>
+    <color name="Accent">#647364</color>
+    <color name="textPrimary">#ffffff</color>
+    <color name="textSecondary">#ffffff</color>
+    <color name="background1">#647364</color>
+    <color name="ColorGray">#DCDCDC</color>
+    <color name="ColorDark">#324132</color>
+</resources>

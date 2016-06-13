@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="@string/action_Search"
+        app:showAsAction="ifRoom|never" />
+    <item
+        android:id="@+id/alarm"
+        android:title="@string/action_Alarm"
+        android:icon="@drawable/appointment"
+        app:showAsAction="ifRoom|never"/>
+</menu>
