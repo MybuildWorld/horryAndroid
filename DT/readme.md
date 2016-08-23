@@ -13,8 +13,6 @@
 * StaggeredGridView
 * SwipeRefreshLayout
 * pagerslidingtabstrip
-* butterknife
-* picasso
 * circleimageview
 
 ## 技巧
