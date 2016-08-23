@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+     tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/content">
+    </FrameLayout>
+
+    <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey50"
+    android:orientation="horizontal"
+    android:elevation="4dp"
+    android:layout_gravity="bottom"
+    android:id="@+id/group"
+    >
+    <RadioButton
+        android:paddingTop="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textColor="@drawable/color_fb_text"
+        android:text="@string/FootBall"
+        android:drawableTop="@drawable/selector_fb_icon"
+        android:id="@+id/fb"
+        android:checked="true"
+        />
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@drawable/color_basket_text"
+        android:text="@string/BasketBall"
+        android:drawableTop="@drawable/selector_basket_icon"
+        android:id="@+id/basket"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@drawable/color_stat_text"
+            android:text="@string/Stat"
+            android:drawableTop="@drawable/selector_stat_icon"
+            android:id="@+id/stat"/>
+
+
+</RadioGroup>
+</LinearLayout>

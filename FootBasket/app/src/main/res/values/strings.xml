@@ -1,0 +1,117 @@
+<resources>
+
+
+    <!--积分榜、射手榜、助攻榜Tab名称-->
+    <string-array name="tab_league_title">
+        <item>中超</item>
+        <item>英超</item>
+        <item>西甲</item>
+        <item>德甲</item>
+        <item>意甲</item>
+    </string-array>
+
+    <string-array name="stat_sort">
+        <item>球队排名</item>
+        <item>赛程</item>
+        <item>数据</item>
+        <item>积分榜</item>
+        <item>射手榜</item>
+        <item>助攻榜</item>
+    </string-array>
+    <!--Tab名称-->
+    <string-array name="tab_fb_title">
+        <item>头条</item>
+        <item>集锦</item>
+        <item>转会</item>
+        <item>深度</item>
+        <item>中超</item>
+        <item>英超</item>
+        <item>西甲</item>
+        <item>德甲</item>
+        <item>意甲</item>
+        <item>五洲</item>
+    </string-array>
+
+    <string-array name="tab_basket_title">
+        <item>新闻</item>
+        <item>博客</item>
+        <item>视频集锦</item>
+        <item>最佳进球</item>
+        <item>赛场花絮</item>
+    </string-array>
+
+    <string-array name="settings_entries_font_size">
+        <item>小号</item>
+        <item>中号</item>
+        <item>大号</item>
+    </string-array>
+
+    <string-array name="settings_entry_values_font_size">
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+    </string-array>
+    <string name="assit">助攻榜</string>
+    <string name="score">积分榜</string>
+    <string name="rank">射手榜</string>
+
+    <string name="top">头条</string>
+    <string name="video">集锦</string>
+    <string name="transfer">转会</string>
+    <string name="deep">深度</string>
+    <string name="china">中超</string>
+    <string name="England">英超</string>
+    <string name="Spain">西甲</string>
+    <string name="Germany">德甲</string>
+    <string name="Italy">意甲</string>
+    <string name="Global">五洲</string>
+
+    <string name="app_name">FootBasket</string>
+    <string name="FootBall">足球</string>
+    <string name="BasketBall">篮球</string>
+    <string name="Stat">数据</string>
+
+    <string name="News">"新闻"</string>
+    <string name="blog">"博客"</string>
+    <string name="match">"赛程"</string>
+    <string name="statictis">"数据"</string>
+    <string name="teamsort">"排名"</string>
+
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+
+    <string name="team">球队</string>
+    <string name="player">球员</string>
+    <string name="daily">每日</string>
+    <string name="everage">场均</string>
+
+    <string name="exit_prompt">再按一次退出</string>
+    <string name="load_success">加载成功</string>
+    <string name="load_more">加载更多</string>
+    <string name="load_fail">加载失败</string>
+    <string name="load_index_fail">加载视频索引失败</string>
+    <string name="load_end">到底了</string>
+
+    <string name="system_setting">系统设置</string>
+    <string name="other_setting">其他设置</string>
+    <string name="pre_loadimage_key">LOADIMAGE</string>
+    <string name="news_detile_load_image">正文中加载图片</string>
+    <string name="load_current">当前为自动加载正文中的图片（默认）</string>
+    <string name="noload_current">当前为不加载正文中的图片</string>
+
+
+    <string name="pre_fontsize_key">ACTILEFONTSIZE</string>
+    <string name="actile_font_size">正文字号</string>
+    <string name="big_font">大号字体</string>
+    <string name="medium_font">中号字体</string>
+    <string name="small_font">小号字体</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="version_update">检查更新</string>
+
+    <string name="contact_to_me">联系</string>
+    <string name="email">horryxwj@163.com</string>
+    <string name="about_introduce">关于</string>
+    <string name="introduce">FootBasket 是一款专注于足球和NBA新闻、动态和视频的平台 \n\n更全面、更方便、更快捷是的获取足球和NBA资讯\n\n所有资讯均来自互联网，如有侵权，请告知！</string>
+    <string name="data_cleared">已清除缓存数据</string>
+    <string name="my_team">我的主队</string>
+</resources>
