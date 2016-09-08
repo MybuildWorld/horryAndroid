@@ -51,11 +51,6 @@
 -----
 - 支持查看我的微博，粉丝，关注
 
-![enter image description here](http://ww4.sinaimg.cn/mw690/691cc151gw1f3rtuexvdsj207i0dcwf6.jpg)
-![enter image description here](http://ww1.sinaimg.cn/mw690/691cc151gw1f3rtufmek0j207i0dc75d.jpg)
-![enter image description here](http://ww3.sinaimg.cn/mw690/691cc151gw1f3rtudxkiuj207i0dcjs7.jpg)
-![enter image description here](http://ww4.sinaimg.cn/mw690/691cc151gw1f3rtuen83aj207i0dcmy7.jpg)
-
 
 
 
